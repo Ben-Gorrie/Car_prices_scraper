@@ -6,6 +6,9 @@ import json
 import pandas as pd
 from datetime import datetime
 import ast
+import logging
+
+logging.basicConfig(filename='logs.log', filemode='w', level=logging.INFO)
 
 def get_html(url : str) -> bytes:
     response = get(url)
@@ -105,51 +108,49 @@ def get_old_car_submodels_dates(car_models : dict) -> dict:
     model_to_dates = {}
     for brand in car_models:
         for model in car_models[brand]:
-            try:
-                html = get_html(f"https://www.latribuneauto.com/cote-occasions/{brand}/modele/{model}")
-                soup = make_soup(html)
 
-                years_html = soup.find_all(name = "div", id = "years-module")[0]
-                all_years = list(years_html.stripped_strings)[1:]
-                all_years = [int(i) for i in all_years]
-                valid_years = list(range(datetime.today().year - 3, datetime.today().year))
-                valid_years_in_html = []
-                for valid_year in valid_years:
-                    if valid_year in all_years:
-                        valid_years_in_html.append(valid_year)
 
-                model_to_dates[model] = valid_years_in_html
+            html = get_html(f"https://www.latribuneauto.com/cote-occasions/{brand}/modele/{model}")
+            soup = make_soup(html)
 
-            except Exception as ex:
-                print(f"https://www.latribuneauto.com/cote-occasions/{brand}/modele/{model}")
-                print(ex)
+            years_html = soup.find_all(name = "div", id = "years-module")[0]
+            all_years = list(years_html.stripped_strings)[1:]
+            valid_years_in_html = []
+            for i in all_years:
+                if int(i) >= datetime.today().year - 3:
+                    valid_years_in_html.append(int(i))
+
+            model_to_dates[(brand, model)] = valid_years_in_html
+
+            logging.info(model)
+            logging.info(model_to_dates[(brand, model)])
     
-    save_dict(model_to_dates, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\model_to_dates.json")
+    #save_dict(model_to_dates, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\model_to_dates.json")
+    save_dict_as_str(model_to_dates, r"/home/bengorrie/Car_prices_scraper/model_to_dates_new.txt")
     return model_to_dates
             
 def get_all_old_car_submodels_info(car_models : dict, models_dates : dict) -> dict:
-    model_to_submodel = {}
-    for brand in car_models:
-        for model in car_models[brand]:
-            for year in models_dates[model]:
-                html = get_html(f"https://www.latribuneauto.com/caracteristiques-voitures-occasions/{brand}/modele/{model}/{year}")
-                soup = make_soup(html)
-                submodels_html = soup.find_all("tbody")
-                if len(submodels_html) == 1:
-                    submodels_html = submodels_html[0]
-                    model_to_submodel[(year, model)] = list(submodels_html.stripped_strings)
-                elif len(submodels_html) > 1:
-                    submodels_html = submodels_html[1]
-                    model_to_submodel[(year, model)] = list(submodels_html.stripped_strings)
-                else:
-                    model_to_submodel[(year, model)] = []
-                print("Done with " + str(year))
-            print("Done with " + model)
-        print("Done with " + brand)
-    save_str = str(model_to_submodel)
-    text_file = open(r'C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\old_submodels_info.txt', 'w')
-    text_file.write(save_str)
-    text_file.close()
+
+    brand_and_model_and_year_to_submodels = {}
+
+    for brand, model in models_dates:
+        for year in models_dates[(brand, model)]:
+            html = get_html(f"https://www.latribuneauto.com/caracteristiques-voitures-occasions/{brand}/modele/{model}/{year}")
+            soup = make_soup(html)
+            submodels_html = soup.find_all("tbody")
+            if len(submodels_html) == 1:
+                submodels_html = submodels_html[0]
+                brand_and_model_and_year_to_submodels[(brand, model, year)] = list(submodels_html.stripped_strings)
+            elif len(submodels_html) > 1:
+                submodels_html = submodels_html[1]
+                brand_and_model_and_year_to_submodels[(brand, model, year)] = list(submodels_html.stripped_strings)
+            else:
+                brand_and_model_and_year_to_submodels[(brand, model, year)] = []
+        logging.info("Done with " + brand + ": " + model)
+
+
+    save_dict_as_str(brand_and_model_and_year_to_submodels, "/home/bengorrie/Car_prices_scraper/old_submodels_info.txt")
+
     #save_dict(model_to_submodel, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\old_submodels_info.json")
     return model_to_submodel
 
@@ -176,18 +177,35 @@ def clean_submodels_info(submodels_info : dict) -> dict:
     return submodels_info
 
 def clean_submodels_info_old(submodels_info : dict) -> dict:
-    res = {}
-    for year, model in submodels_info:
-        del submodels_info[(year, model)][3::4]
-        submodels = submodels_info[(year, model)][::3]
-        prices = submodels_info[(year, model)][1::3]
-        CO2_emissions = submodels_info[(year, model)][2::3]
-        for submodel_index in range(len(submodels) - 1):
-            #submodels_info[(model, year, submodels[submodel_index])] = {"price" : prices[submodel_index], "CO2_emissions" : CO2_emissions[submodel_index]} 
-            res[(model, year, submodels[submodel_index])] = {"price" : prices[submodel_index], "CO2_emissions" : CO2_emissions[submodel_index]}
 
-    print("Done cleaning")   
-    return res
+    brand_and_model_and_year_and_submodel_to_info = {}
+    for brand, model, year in submodels_info:
+        all_submodels = submodels_info[(brand, model, year)]
+        container = []
+        specific_submodel = []
+        for datapoint in all_submodels:
+            if datapoint != "2":
+                specific_submodel.append(datapoint)
+            if datapoint == "2":
+                container.append(specific_submodel)
+                specific_submodel = []
+        for submodel_info in container:
+            if len(submodel_info[1:]) == 1:
+                brand_and_model_and_year_and_submodel_to_info[(brand, model, year, submodel_info[0])] = {"price" : None, "CO2_emissions" : submodel_info[1]}
+
+            else:
+                brand_and_model_and_year_and_submodel_to_info[(brand, model, year, submodel_info[0])] = {"price" : submodel_info[1], "CO2_emissions" : submodel_info[2]}
+
+            logging.info(f"{brand} : {model} : {year} : {submodel_info[0]}")
+            logging.info(brand_and_model_and_year_and_submodel_to_info[(brand, model, year, submodel_info[0])])
+
+
+
+
+    save_dict_as_str(brand_and_model_and_year_and_submodel_to_info, "/home/bengorrie/Car_prices_scraper/old_submodels_info_clean.txt")
+
+    return brand_and_model_and_year_and_submodel_to_info
+
 
 
 def create_final_dict(car_models : dict, submodels_info : dict) -> dict:
@@ -226,6 +244,19 @@ def read_dict(path : str):
         data = f.read()
         dict = json.loads(data)
     return dict
+
+def save_dict_as_str(var : dict, path : str):
+    save_str = str(var)
+    text_file = open(path, 'w')
+    text_file.write(save_str)
+    text_file.close()
+
+def read_dict_as_str(path : str) -> dict:
+    text_file = open(path, 'r')
+    dictionary = ast.literal_eval(text_file.read())
+    text_file.close()
+    return dictionary
+
 
 def main(): 
 
@@ -277,28 +308,28 @@ def main_old():
     
     submodels_info = get_all_old_car_submodels_info(car_models, models_dates)"""
 
-    car_models = read_dict(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\car_models_old.json")
-    
-    models_dates = read_dict(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\model_to_dates.json")
-
-    text_file = open(r'C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\old_submodels_info.txt', 'r')
-
-    submodels_info = ast.literal_eval(text_file.read())
-
-    text_file.close()
-
-    submodels_info = clean_submodels_info_old(submodels_info)
-
-    for a in submodels_info.keys():
-        print(a)
-        sleep(2)
-
-    #final = create_final_dict_old(car_models, submodels_info)
-
-    #df = pd.DataFrame(final).transpose()
 
 
-    #df.to_csv(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\final_old.csv")
+
+
+
+
+
+
+
+    car_models = read_dict(r"/home/bengorrie/Car_prices_scraper/car_models_old.json")
+
+    brand_and_model_to_dates = read_dict_as_str("/home/bengorrie/Car_prices_scraper/model_to_dates_new.json")
+
+    submodels_info = read_dict_as_str("/home/bengorrie/Car_prices_scraper/old_submodels_info.txt")
+
+    final = clean_submodels_info_old(submodels_info)
+
+
+    df = pd.DataFrame(final).transpose()
+
+
+    df.to_csv("/home/bengorrie/Car_prices_scraper/final_old.csv")
 
 
 
