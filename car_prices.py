@@ -43,6 +43,7 @@ def get_all_car_ids(soup : bs) -> list:
     ids = []
     for option in all_options:
         ids.append(option["value"])
+    logging.info("Got car ids")
     return ids
 
 def get_all_car_models(new_or_old : str, car_brands : list, car_ids : list) -> dict:
@@ -73,9 +74,11 @@ def get_all_car_models(new_or_old : str, car_brands : list, car_ids : list) -> d
         all_models[car_brand] = models
     
     if new_or_old == "new":
-        save_dict(all_models, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\car_models.json")
+        save_dict(all_models, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\car_models.json")
     elif new_or_old == "old":
-        save_dict(all_models, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\car_models_old.json")
+        save_dict(all_models, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\car_models_old.json")
+    
+    logging.info("Got car models")
 
     return all_models
 
@@ -101,7 +104,7 @@ def get_all_car_submodels_info(car_models : dict) -> dict:
             else:
                 model_to_submodel[model] = []
        
-    save_dict(model_to_submodel, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\submodels_info.json")
+    save_dict(model_to_submodel, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\submodels_info.json")
     return model_to_submodel
 
 def get_old_car_submodels_dates(car_models : dict) -> dict:
@@ -126,15 +129,16 @@ def get_old_car_submodels_dates(car_models : dict) -> dict:
             logging.info(model_to_dates[(brand, model)])
     
     #save_dict(model_to_dates, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\model_to_dates.json")
-    save_dict_as_str(model_to_dates, r"/home/bengorrie/Car_prices_scraper/model_to_dates_new.txt")
+    save_dict_as_str(model_to_dates, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\model_to_dates_new.txt")
+    logging.info("Got model dates")
     return model_to_dates
             
-def get_all_old_car_submodels_info(car_models : dict, models_dates : dict) -> dict:
+def get_all_old_car_submodels_info(brand_and_model_to_dates : dict) -> dict:
 
     brand_and_model_and_year_to_submodels = {}
 
-    for brand, model in models_dates:
-        for year in models_dates[(brand, model)]:
+    for brand, model in brand_and_model_to_dates:
+        for year in brand_and_model_to_dates[(brand, model)]:
             html = get_html(f"https://www.latribuneauto.com/caracteristiques-voitures-occasions/{brand}/modele/{model}/{year}")
             soup = make_soup(html)
             submodels_html = soup.find_all("tbody")
@@ -149,10 +153,10 @@ def get_all_old_car_submodels_info(car_models : dict, models_dates : dict) -> di
         logging.info("Done with " + brand + ": " + model)
 
 
-    save_dict_as_str(brand_and_model_and_year_to_submodels, "/home/bengorrie/Car_prices_scraper/old_submodels_info.txt")
+    #save_dict_as_str(brand_and_model_and_year_to_submodels, "/home/bengorrie/Car_prices_scraper/old_submodels_info.txt")
 
-    #save_dict(model_to_submodel, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\old_submodels_info.json")
-    return model_to_submodel
+    save_dict_as_str(brand_and_model_and_year_to_submodels, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\old_submodels_info.txt")
+    return brand_and_model_and_year_to_submodels
 
    
 
@@ -198,11 +202,15 @@ def clean_submodels_info_old(submodels_info : dict) -> dict:
 
             logging.info(f"{brand} : {model} : {year} : {submodel_info[0]}")
             logging.info(brand_and_model_and_year_and_submodel_to_info[(brand, model, year, submodel_info[0])])
+    
 
 
 
 
-    save_dict_as_str(brand_and_model_and_year_and_submodel_to_info, "/home/bengorrie/Car_prices_scraper/old_submodels_info_clean.txt")
+
+
+    #save_dict_as_str(brand_and_model_and_year_and_submodel_to_info, "/home/bengorrie/Car_prices_scraper/old_submodels_info_clean.txt")
+    save_dict_as_str(brand_and_model_and_year_and_submodel_to_info, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\old_submodels_info_clean.txt")
 
     return brand_and_model_and_year_and_submodel_to_info
 
@@ -221,17 +229,6 @@ def create_final_dict(car_models : dict, submodels_info : dict) -> dict:
             for submodel, info in submodels_info[model].items():
                 final[(brand, model, submodel)] = info
     return final
-
-def create_final_dict_old(car_models : dict, submodels_info : dict) -> dict:
-    final = {}
-    for brand, models in car_models.items():
-        for model_source in models:
-            for model_conn, year, submodel, info in submodels_info.items():
-                final[(brand, model_source, year, submodel)] = info
-    print("Done finalising")
-    return final
-
-
             
 
 def save_dict(var, path_to_file):
@@ -294,7 +291,7 @@ def main():
 
 def main_old():
 
-    r"""html = get_html("https://www.latribuneauto.com/cote-occasions/")
+    html = get_html("https://www.latribuneauto.com/cote-occasions/")
 
     soup = make_soup(html)
 
@@ -306,30 +303,41 @@ def main_old():
 
     models_dates = get_old_car_submodels_dates(car_models)
     
-    submodels_info = get_all_old_car_submodels_info(car_models, models_dates)"""
-
-
-
-
-
-
-
-
-
-
-    car_models = read_dict(r"/home/bengorrie/Car_prices_scraper/car_models_old.json")
-
-    brand_and_model_to_dates = read_dict_as_str("/home/bengorrie/Car_prices_scraper/model_to_dates_new.json")
-
-    submodels_info = read_dict_as_str("/home/bengorrie/Car_prices_scraper/old_submodels_info.txt")
+    submodels_info = get_all_old_car_submodels_info(models_dates)
 
     final = clean_submodels_info_old(submodels_info)
 
 
     df = pd.DataFrame(final).transpose()
 
+    df["price"].replace("[^0-9]", "", inplace = True, regex = True)
 
-    df.to_csv("/home/bengorrie/Car_prices_scraper/final_old.csv")
+    df["CO2_emissions"].replace("[^0-9]", "", inplace = True, regex = True)
+
+    df["CO2_emissions"] = df["CO2_emissions"].astype(int)
+
+    df["is_electric"] = False
+
+    df.loc[df["CO2_emissions"] == 0, "is_electric"] = True
+
+
+    df.to_csv(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\final_old.csv")
+
+
+
+
+
+
+
+
+
+    r"""car_models = read_dict(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\car_models_old.json")
+
+    brand_and_model_to_dates = read_dict_as_str(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\model_to_dates_new.json")
+
+    submodels_info = read_dict_as_str(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\old_submodels_info.txt")"""
+
+    
 
 
 
