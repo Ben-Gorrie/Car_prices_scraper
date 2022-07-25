@@ -11,18 +11,31 @@ import logging
 logging.basicConfig(filename='logs.log', filemode='w', level=logging.INFO)
 
 def get_html(url : str) -> bytes:
+    """
+    Get HTML from website
+    :param url: URL of website we want HTML from
+    :return: HTML content
+    """
     response = get(url)
     html = response.content
     return html
 
 
-
 def make_soup(html : bytes) -> bs:
+    """
+    Make BeautifulSoup object from HTML for easier parsing
+    :param html: HTML we want to parse
+    """
     soup = bs(html, "lxml")
     return soup
 
 
 def get_all_car_brands(soup : bs) -> list:
+    """
+    Get all car brands from www.latribuneauto.com/
+    :param bs: BeautifulSoup we want to find car brands from
+    :return: list of car brands with spaces replaced with "-"
+    """
     all_options = soup.find_all("option")
     all_options = all_options[1:-1]
 
@@ -49,7 +62,7 @@ def get_all_car_ids(soup : bs) -> list:
 def get_all_car_models(new_or_old : str, car_brands : list, car_ids : list) -> dict:
     """
     Create a dict linking car brands to car models
-    :param new_or_old: <new> or <old> depending on which we want to search for (new or used)
+    :param new_or_old: <new> or <old> depending on which we want to search for (new cars or used cars)
     :param car_brands: list of car brands (make sure that the list contains the old cars if new_or_old is old and vice versa)
     :param car_ids: list of car brand ids (make sure that the list contains the old car ids if new_or_old is old and vice versa)
     :return: dictionary of lists which links car brands to car models
@@ -64,12 +77,16 @@ def get_all_car_models(new_or_old : str, car_brands : list, car_ids : list) -> d
         models_html = soup.find_all(name = "select", id = "search_model")[0]
         models = []
         for model in models_html.find_all("option"):
+
+            #String sanitisation as spaces and + do not play well with links
             model = model.text.replace(" ", "-")
             if model[-1] == "+":
                 model = model.replace("+", "")
             else:
                 model = model.replace("+", "-")
             model = model.replace("'", "-")
+
+
             models.append(model)
         all_models[car_brand] = models
     
@@ -89,7 +106,7 @@ def get_all_car_submodels_info(car_models : dict) -> dict:
     :param car_models: dictionary of lists which links car brands to car models
     :return: dictionary which links car model to submodel info
     """
-    model_to_submodel = {}
+    brand_and_model_to_submodel = {}
     for brand in car_models:
         for model in car_models[brand]:
             html = get_html(f"https://www.latribuneauto.com/caracteristiques-voitures-neuves/{brand}/modele/{model}")
@@ -97,15 +114,17 @@ def get_all_car_submodels_info(car_models : dict) -> dict:
             submodels_html = soup.find_all("tbody")
             if len(submodels_html) == 1:
                 submodels_html = submodels_html[0]
-                model_to_submodel[model] = list(submodels_html.stripped_strings)
+                brand_and_model_to_submodel[(brand, model)] = list(submodels_html.stripped_strings)
             elif len(submodels_html) > 1:
                 submodels_html = submodels_html[1]
-                model_to_submodel[model] = list(submodels_html.stripped_strings)
+                brand_and_model_to_submodel[(brand, model)] = list(submodels_html.stripped_strings)
             else:
-                model_to_submodel[model] = []
+                brand_and_model_to_submodel[(brand, model)] = []
+                
+            logging.info("Done with " + brand + ": " + model)
        
-    save_dict(model_to_submodel, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\submodels_info.json")
-    return model_to_submodel
+    save_dict_as_str(brand_and_model_to_submodel, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\submodels_info.txt")
+    return brand_and_model_to_submodel
 
 def get_old_car_submodels_dates(car_models : dict) -> dict:
     model_to_dates = {}
@@ -128,7 +147,6 @@ def get_old_car_submodels_dates(car_models : dict) -> dict:
             logging.info(model)
             logging.info(model_to_dates[(brand, model)])
     
-    #save_dict(model_to_dates, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\model_to_dates.json")
     save_dict_as_str(model_to_dates, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\model_to_dates_new.txt")
     logging.info("Got model dates")
     return model_to_dates
@@ -163,22 +181,31 @@ def get_all_old_car_submodels_info(brand_and_model_to_dates : dict) -> dict:
 
 def clean_submodels_info(submodels_info : dict) -> dict:
     """
-    Changes the structure of the submodels_info dictionary from dict of lists (e.g. {model : [submodel info]} ) to dict of dict of dict (e.g {model : {submodel_name : {price : xx, CO2 : xx}}} )
     :param submodels_info: dictionary returned by get_all_car_submodels_info
-    :return: structured nested dictionary containing info about car submodels
+    :return: dictionary containing info about car submodels
     """
-    for model in submodels_info.keys():
-        res = {}
-        del submodels_info[model][3::4]
-        submodels = submodels_info[model][::3]
-        prices = submodels_info[model][1::3]
-        CO2_emissions = submodels_info[model][2::3]
-        
-        for i in range(len(submodels) - 1):
-            res[submodels[i]] = {"price" : prices[i], "CO2_emissions": CO2_emissions[i]}
-        submodels_info[model] = res
-    save_dict(submodels_info, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\submodels_info_clean.json")
-    return submodels_info
+    brand_and_model_and_submodel_to_info = {}
+    for brand, model in submodels_info:
+        all_submodels = submodels_info[(brand, model)]
+        container = []
+        specific_submodel = []
+        for datapoint in all_submodels:
+            if datapoint != "2":
+                specific_submodel.append(datapoint)
+            if datapoint == "2":
+                container.append(specific_submodel)
+                specific_submodel = []
+        for submodel_info in container:
+            if len(submodel_info[1:]) == 1:
+                brand_and_model_and_submodel_to_info[(brand, model, submodel_info[0])] = {"price" : None, "CO2_emissions" : submodel_info[1]}
+            else:
+                brand_and_model_and_submodel_to_info[(brand, model, submodel_info[0])] = {"price" : submodel_info[1], "CO2_emissions" : submodel_info[2]}
+
+
+    save_dict_as_str(brand_and_model_and_submodel_to_info, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\submodels_info_clean.txt")
+
+
+    return brand_and_model_and_submodel_to_info
 
 def clean_submodels_info_old(submodels_info : dict) -> dict:
 
@@ -203,32 +230,11 @@ def clean_submodels_info_old(submodels_info : dict) -> dict:
             logging.info(f"{brand} : {model} : {year} : {submodel_info[0]}")
             logging.info(brand_and_model_and_year_and_submodel_to_info[(brand, model, year, submodel_info[0])])
     
-
-
-
-
-
-
     #save_dict_as_str(brand_and_model_and_year_and_submodel_to_info, "/home/bengorrie/Car_prices_scraper/old_submodels_info_clean.txt")
     save_dict_as_str(brand_and_model_and_year_and_submodel_to_info, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\old_submodels_info_clean.txt")
 
     return brand_and_model_and_year_and_submodel_to_info
 
-
-
-def create_final_dict(car_models : dict, submodels_info : dict) -> dict:
-    """
-    Link all previous dictionaries together to get a dictionary of the form {brand : {model : {submodel : {submodel info}}}}
-    :param car_models: dictionary of lists which links car brands to car models
-    :param submodels_info: structured nested dictionary containing info about car submodels
-    :return: dictionary as described above
-    """
-    final = {}
-    for brand, models in car_models.items():
-        for model in models:
-            for submodel, info in submodels_info[model].items():
-                final[(brand, model, submodel)] = info
-    return final
             
 
 def save_dict(var, path_to_file):
@@ -267,12 +273,9 @@ def main():
 
     car_models = get_all_car_models("new", car_brands, car_ids)
 
-    submodels_info = get_all_car_submodels_info("new", car_models)
+    submodels_info = get_all_car_submodels_info(car_models)
 
-    submodels_info = clean_submodels_info(submodels_info)
-
-    final = create_final_dict(car_models, submodels_info)
-
+    final = clean_submodels_info(submodels_info)
 
     df = pd.DataFrame(final).transpose()
 
@@ -287,7 +290,7 @@ def main():
     df.loc[df["CO2_emissions"] == 0, "is_electric"] = True
 
 
-    df.to_csv(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices\final.csv")
+    df.to_csv(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\final.csv")
 
 def main_old():
 
@@ -345,4 +348,4 @@ def main_old():
 
 
     
-main_old()
+main()
