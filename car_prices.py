@@ -173,7 +173,6 @@ def get_all_old_car_submodels_info(brand_and_model_to_dates : dict) -> dict:
     :return: dictionary which links car brand, model and date to submodel information
     """
     brand_and_model_and_year_to_submodels = {}
-
     for brand, model in brand_and_model_to_dates:
         for year in brand_and_model_to_dates[(brand, model)]:
             html = get_html(f"https://www.latribuneauto.com/caracteristiques-voitures-occasions/{brand}/modele/{model}/{year}")
@@ -286,7 +285,7 @@ def turn_dict_to_df_and_edit(dictionary : dict) -> pd.DataFrame:
     df["is_electric"] = False
 
     df.loc[df["CO2_emissions"] == 0, "is_electric"] = True
-    
+
     return df
 
 def get_hrefs_for_electric_submodels(df : pd.DataFrame) -> tuple:
@@ -296,9 +295,9 @@ def get_hrefs_for_electric_submodels(df : pd.DataFrame) -> tuple:
     hrefs = []
     
     for index in indices:
-        url = df.iloc[index, 5]
+        url = df.loc[index, "url"]
 
-        submodel = df.iloc[index, 2]
+        submodel = index[-1]
 
         html = get_html(url)
 
@@ -360,17 +359,6 @@ def get_all_autonomous_range(hrefs : list) -> list:
     save_list(autonomous_ranges, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\autonomous_ranges.P")
     return autonomous_ranges
 
-    
-
-        
-
-
-
-        
-
-    
-
-
 
 def save_dict(var, path_to_file):
     with open(path_to_file, "w") as tf:
@@ -408,7 +396,7 @@ def read_list(path : str) -> list:
 
 def main(): 
 
-    r"""html = get_html("https://www.latribuneauto.com/prix/voitures-neuves")
+    html = get_html("https://www.latribuneauto.com/prix/voitures-neuves")
     print("Got html")
 
     soup = make_soup(html)
@@ -431,36 +419,22 @@ def main():
 
     df = turn_dict_to_df_and_edit(final)
     print("Turned into df")
-    
+
+    #final = read_dict_as_str(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\submodels_info_clean.txt")
+
+    #df = turn_dict_to_df_and_edit(final)
+
     indices, hrefs = get_hrefs_for_electric_submodels(df)
-    """
 
-    df = pd.read_csv(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\final.csv")
-
-    indices = df[df["is_electric"]].index.tolist()
-
-    hrefs = read_list(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\hrefs.P")
-
-    autonomous_ranges = read_list(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\autonomous_ranges.P")
+    autonomous_ranges = get_all_autonomous_range(hrefs)
 
     df["autonomous_range"] = None
 
     for i in range(len(indices)):
-        df.iloc[indices[i], 7] = autonomous_ranges[i]
+        df.loc[indices[i], "autonomous_range"] = autonomous_ranges[i]
 
 
-    df.to_csv(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\df_with_range.csv")
-
-    
-
-    
-    
-
-
-    
-    
-
-
+    df.to_csv(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\df_with_range_full_process.csv")
 
 def main_old():
 
