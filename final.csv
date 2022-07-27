@@ -977,11 +977,12 @@ BMW,Série-8-Coupé,840d xDrive BVA8 M Sport,109600,163,https://www.latribuneaut
 BMW,Série-8-Coupé,840d xDrive BVA8 M Sport Technic,113750,163,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/Série-8-Coupé,False
 BMW,Série-8-Gran-Coupé,840i xDrive,99350,197,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/Série-8-Gran-Coupé,False
 BMW,Série-8-Gran-Coupé,840i xDrive M Sport,104650,197,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/Série-8-Gran-Coupé,False
-BMW,Série-8-Gran-Coupé,840i xDrive M Sport Technic,110700,167,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/Série-8-Gran-Coupé,False
+BMW,Série-8-Gran-Coupé,840i xDrive M Sport Technic,108500,197,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/Série-8-Gran-Coupé,False
 BMW,Série-8-Gran-Coupé,M850i xDrive,126400,248,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/Série-8-Gran-Coupé,False
 BMW,Série-8-Gran-Coupé,M8 Competition,170700,251,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/Série-8-Gran-Coupé,False
 BMW,Série-8-Gran-Coupé,840d xDrive,101550,167,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/Série-8-Gran-Coupé,False
 BMW,Série-8-Gran-Coupé,840d xDrive M Sport,106850,167,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/Série-8-Gran-Coupé,False
+BMW,Série-8-Gran-Coupé,840i xDrive M Sport Technic(0),110700,167,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/Série-8-Gran-Coupé,False
 BMW,X1,sDrive 18i 136 Première,32500,140,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/X1,False
 BMW,X1,sDrive 18i 136 Lounge,33950,140,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/X1,False
 BMW,X1,sDrive 18i 136 xLine,39250,140,https://www.latribuneauto.com/caracteristiques-voitures-neuves/BMW/modele/X1,False
@@ -1458,10 +1459,11 @@ FERRARI,SF90-Stradale,4.0 V8 780 Hybrid,423574,292,https://www.latribuneauto.com
 FIAT,500,1.0 70 BSG S&S Cult,15790,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500,False
 FIAT,500,1.0 70 BSG S&S Dolcevita,17290,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500,False
 FIAT,500,1.0 70 BSG S&S Dolcevita Plus,19290,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500,False
-FIAT,500,1.0 70 BSG S&S Sport,16790,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500,False
+FIAT,500,1.0 70 BSG S&S Sport,19290,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500,False
 FIAT,500,1.0 70 BSG S&S Hey Google,18790,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500,False
 FIAT,500,1.0 70 BSG S&S Pop,15290,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500,False
 FIAT,500,1.0 70 BSG S&S Lounge,16290,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500,False
+FIAT,500,1.0 70 BSG S&S Sport(0),16790,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500,False
 FIAT,500,1.0 70 BSG S&S Star,17290,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500,False
 FIAT,500,1.0 70 BSG S&S Rocketstar,17790,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500,False
 FIAT,500,1.0 70 BSG S&S Club,20290,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500,False
@@ -1486,10 +1488,11 @@ FIAT,500-e,87 kW 42 kWh La Prima,35300,0,https://www.latribuneauto.com/caracteri
 FIAT,500C,1.0 70 BSG S&S Cult,18590,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C,False
 FIAT,500C,1.0 70 BSG S&S Dolcevita,20090,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C,False
 FIAT,500C,1.0 70 BSG S&S Dolcevita Plus,22090,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C,False
-FIAT,500C,1.0 70 BSG S&S Sport,19590,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C,False
+FIAT,500C,1.0 70 BSG S&S Sport,22090,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C,False
 FIAT,500C,1.0 70 BSG S&S Hey Google,21590,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C,False
 FIAT,500C,1.0 70 BSG S&S Pop,18090,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C,False
 FIAT,500C,1.0 70 BSG S&S Lounge,19090,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C,False
+FIAT,500C,1.0 70 BSG S&S Sport(0),19590,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C,False
 FIAT,500C,1.0 70 BSG S&S Star,20090,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C,False
 FIAT,500C,1.0 70 BSG S&S Rocketstar,20590,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C,False
 FIAT,500C,1.0 70 BSG S&S Club,23090,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C,False
@@ -1505,50 +1508,63 @@ FIAT,500C-e,87 kW 42 kWh Passion,31300,0,https://www.latribuneauto.com/caracteri
 FIAT,500C-e,87 kW 42 kWh Icône,33300,0,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C-e,True
 FIAT,500C-e,87 kW 42 kWh Icône Plus,34900,0,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C-e,True
 FIAT,500C-e,87 kW 42 kWh La Prima,38300,0,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500C-e,True
-FIAT,500L,1.3 Multijet 95 S/S Sport,22890,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500L,False
+FIAT,500L,1.3 Multijet 95 S/S Sport,23290,128,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500L,False
 FIAT,500L,1.3 Multijet 95 S/S Hey Google,23290,128,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500L,False
+FIAT,500L,1.3 Multijet 95 S/S Sport(0),22890,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500L,False
 FIAT,500L,1.3 Multijet 95 S/S Dualogic Sport,23890,143,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500L,False
 FIAT,500L,1.6 Multijet 120 S/S Sport,23890,141,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500L,False
 FIAT,500X,1.0 GSE T3 120 Cult,22590,141,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.0 GSE T3 120 Cross,23290,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.0 GSE T3 120 Sport,26390,149,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.0 GSE T3 120 Club,27290,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.3 GSE T4 150 DCT Cross,26290,140,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.3 GSE T4 150 DCT Sport,29390,152,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.3 GSE T4 150 DCT Club,30290,140,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.0 GSE T3 120 Cross,24590,141,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.0 GSE T3 120 Sport,27590,141,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.0 GSE T3 120 Club,29590,141,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 GSE T4 150 DCT Cross,27590,146,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 GSE T4 150 DCT Sport,30590,146,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 GSE T4 150 DCT Club,32590,146,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.0 GSE T3 120 Connect Edition,26990,141,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.0 GSE T3 120 Hey Google,25590,141,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.0 GSE T3 120 Yacht Club Capri,34890,141,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.3 GSE T4 150 DCT Connect Edition,29990,146,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.3 GSE T4 150 DCT Hey Google,28590,146,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.3 GSE T4 150 DCT Yacht Club Capri,37890,146,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.3 Multijet 95 Cross,24790,108,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.3 Multijet 95 Sport,26390,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.3 Multijet 95 Club,28390,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.6 Multijet 120 Cross,26090,115,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.6 Multijet 120 Sport,27890,136,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.6 Multijet 120 Club,30090,115,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 Multijet 95 Cross,26890,124,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 Multijet 95 Sport,29890,124,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 Multijet 95 Club,31890,124,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 Cross,29090,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 Sport,32090,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 Club,34090,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.3 Multijet 95 Hey Google,27890,124,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.6 Multijet 120 Connect Edition,31490,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.6 Multijet 120 Hey Google,30090,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.6 Multijet 120 Yacht Club Capri,39390,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.0 GSE T3 120 City Cross,21290,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.0 GSE T3 120 City Cross,22090,149,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.0 GSE T3 120 Cross(0),23890,149,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.0 GSE T3 120 Club(1),28390,149,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.0 GSE T3 120 Lounge,24690,149,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.3 GSE T4 150 DCT City Cross,24290,139,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.0 GSE T3 120 Sport(2),26390,149,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 GSE T4 150 DCT City Cross,25090,152,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 GSE T4 150 DCT Cross(3),26890,152,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 GSE T4 150 DCT Club(4),31390,152,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.3 GSE T4 150 DCT Lounge,27690,152,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 GSE T4 150 DCT Sport(5),29390,152,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.0 GSE T3 120 Ballon d'Or,26890,149,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.0 GSE T3 120 Elysia,26390,149,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.0 GSE T3 120 Sport&Style,25990,149,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.3 GSE T4 150 DCT Ballon d'Or,30090,152,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.3 GSE T4 150 DCT Elysia,29390,152,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.3 GSE T4 150 DCT Sport&Style,28990,152,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.3 Multijet 95 City Cross,22790,108,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 Multijet 95 City Cross,22090,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 Multijet 95 Cross(6),23890,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 Multijet 95 Club(7),28390,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.3 Multijet 95 Lounge,24690,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.3 Multijet 120 City Cross,24090,124,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 Multijet 95 Sport(8),26390,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 Multijet 120 City Cross,23590,136,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 Cross(9),25390,136,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 Club(10),29890,136,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.6 Multijet 120 Lounge,26190,136,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.6 Multijet 120 DCT City Cross,25590,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.6 Multijet 120 DCT Cross,27590,123,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
-FIAT,500X,1.6 Multijet 120 DCT Club,31590,123,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 Sport(11),27890,136,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 DCT City Cross,25090,143,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 DCT Cross,26890,143,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 DCT Club,31390,143,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.6 Multijet 120 DCT Lounge,27690,143,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.6 Multijet 120 DCT Sport,29390,143,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.6 Multijet 120 Ballon d'Or,28390,136,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
@@ -1556,11 +1572,25 @@ FIAT,500X,1.6 Multijet 120 Elysia,27890,136,https://www.latribuneauto.com/caract
 FIAT,500X,1.6 Multijet 120 DCT Ballon d'Or,30090,143,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.6 Multijet 120 DCT Elysia,29390,143,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.0 GSE T3 120 Urban,19290,131,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.0 GSE T3 120 City Cross(12),21290,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.0 GSE T3 120 Cross(13),23290,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.0 GSE T3 120 Club(14),27290,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 GSE T4 150 DCT City Cross(15),24290,139,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 GSE T4 150 DCT Cross(16),26290,140,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 GSE T4 150 DCT Club(17),30290,140,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.0 GSE T3 120 S-Design,25290,133,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.0 GSE T3 120 120th,25290,131,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.3 GSE T4 150 DCT S-Design,28290,139,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.3 GSE T4 150 DCT 120th,28290,139,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.3 GSE T4 150 DCT by Hartcourt,27990,139,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 Multijet 95 City Cross(18),22790,108,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 Multijet 95 Cross(19),24790,108,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.3 Multijet 120 City Cross(20),24090,124,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 Cross(21),26090,115,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 Club(22),30090,115,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 DCT City Cross(23),25590,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 DCT Cross(24),27590,123,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
+FIAT,500X,1.6 Multijet 120 DCT Club(25),31590,123,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,2.0 Multijet 150 AT9 Cross,30390,152,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.6 Multijet 120 Urban,22090,124,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.6 Multijet 120 S-Design,28090,115,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
@@ -1569,9 +1599,11 @@ FIAT,500X,1.6 Multijet 120 by Hartcourt,27790,115,https://www.latribuneauto.com/
 FIAT,500X,1.6 Multijet 120 DCT S-Design,29590,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,500X,1.6 Multijet 120 DCT by Hartcourt,29290,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/500X,False
 FIAT,Panda,1.0 70 Hybrid BSG S/S,11990,115,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
-FIAT,Panda,1.0 70 Hybrid BSG S/S City Life,13490,122,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
-FIAT,Panda,1.0 70 Hybrid BSG S/S Sport,14790,123,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
+FIAT,Panda,1.0 70 Hybrid BSG S/S City Life,13490,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
+FIAT,Panda,1.0 70 Hybrid BSG S/S Sport,14790,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
 FIAT,Panda,1.0 70 Hybrid BSG S/S City,11990,123,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
+FIAT,Panda,1.0 70 Hybrid BSG S/S City Life(0),13490,122,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
+FIAT,Panda,1.0 70 Hybrid BSG S/S Sport(1),14790,123,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
 FIAT,Panda,1.2 69 S/S,9990,129,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
 FIAT,Panda,1.2 69 S/S Easy,11590,129,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
 FIAT,Panda,1.2 69 S/S Lounge,12990,129,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
@@ -1583,12 +1615,17 @@ FIAT,Panda,1.0 70 BSG S/S Trussardi,15990,89,https://www.latribuneauto.com/carac
 FIAT,Panda,0.9 85 Twinair S/S Trussardi,16490,107,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
 FIAT,Panda,1.2 69 GPL Lounge,14490,121,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
 FIAT,Panda,0.9 85 Twinair S/S GNV Lounge,16490,97,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda,False
-FIAT,Panda-4x4,0.9 85 Twinair S/S,17690,164,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-4x4,False
+FIAT,Panda-4x4,0.9 85 Twinair S/S,17590,156,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-4x4,False
+FIAT,Panda-4x4,0.9 85 Twinair S/S(0),17690,163,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-4x4,False
+FIAT,Panda-4x4,0.9 85 Twinair S/S(1),17690,164,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-4x4,False
 FIAT,Panda-4x4,0.9 85 Twinair S/S Wild,16690,164,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-4x4,False
-FIAT,Panda-City-Cross,1.0 70 Hybrid BSG S/S,14490,127,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
-FIAT,Panda-City-Cross,1.0 70 Hybrid BSG S/S Plus,15490,125,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
-FIAT,Panda-City-Cross,0.9 85 Twinair S/S 4x4,19690,163,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
+FIAT,Panda-City-Cross,1.0 70 Hybrid BSG S/S,14990,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
+FIAT,Panda-City-Cross,1.0 70 Hybrid BSG S/S Plus,16090,120,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
+FIAT,Panda-City-Cross,0.9 85 Twinair S/S 4x4,20190,156,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
+FIAT,Panda-City-Cross,1.0 70 Hybrid BSG S/S(0),14490,127,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
 FIAT,Panda-City-Cross,1.0 70 Hybrid BSG S/S Pack,14490,127,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
+FIAT,Panda-City-Cross,1.0 70 Hybrid BSG S/S Plus(1),15490,125,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
+FIAT,Panda-City-Cross,0.9 85 Twinair S/S 4x4(2),19690,163,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
 FIAT,Panda-City-Cross,1.2 69,13690,145,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
 FIAT,Panda-City-Cross,1.2 69 Plus,14390,145,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
 FIAT,Panda-City-Cross,1.0 70 BSG S/S,14690,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FIAT/modele/Panda-City-Cross,False
@@ -1814,36 +1851,46 @@ FORD,Tourneo-Connect,1.5 TD 120 Active,30010,118,https://www.latribuneauto.com/c
 FORD,Tourneo-Connect,1.5 TD 120 Trend BVA8,27760,130,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FORD/modele/Tourneo-Connect,False
 FORD,Tourneo-Connect,1.5 TD 120 Titanium BVA8,29910,130,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FORD/modele/Tourneo-Connect,False
 FORD,Tourneo-Connect,1.5 TD 120 Active BVA8,31710,130,https://www.latribuneauto.com/caracteristiques-voitures-neuves/FORD/modele/Tourneo-Connect,False
-HONDA,Civic,1.0 VTEC Turbo 126 Elegance,24420,134,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
+HONDA,Civic,1.0 VTEC Turbo 126 Elegance,25500,134,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.0 VTEC Turbo 126 Elegance Sport Line,27250,137,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
-HONDA,Civic,1.0 VTEC Turbo 126 Executive,26420,137,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
-HONDA,Civic,1.0 VTEC Turbo 126 Exclusive,29020,140,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
+HONDA,Civic,1.0 VTEC Turbo 126 Executive,27500,137,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
+HONDA,Civic,1.0 VTEC Turbo 126 Exclusive,29850,140,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.0 VTEC Turbo 126 Exclusive Sport Line,31030,140,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.0 VTEC Turbo 129 Executive CVT,28800,147,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.0 VTEC Turbo 129 Exclusive CVT,31150,151,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.0 VTEC Turbo 129 Exclusive Sport Line CVT,32350,152,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
-HONDA,Civic,1.5 VTEC Turbo 182 Sport Plus,31880,139,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
+HONDA,Civic,1.5 VTEC Turbo 182 Sport Plus,32160,139,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.6 i-DTEC 120 Executive,28700,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.6 i-DTEC 120 Exclusive,31050,121,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
+HONDA,Civic,1.0 VTEC Turbo 126 Elegance(0),24420,134,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
+HONDA,Civic,1.0 VTEC Turbo 126 Executive(1),26420,137,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
+HONDA,Civic,1.0 VTEC Turbo 126 Exclusive(2),29020,140,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.0 VTEC Turbo 126 Exclusive Premium,30020,141,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.0 VTEC Turbo 126 Executive CVT,27720,147,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.0 VTEC Turbo 126 Exclusive CVT,30320,151,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.0 VTEC Turbo 126 Exclusive Premium CVT,31320,152,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.5 VTEC Turbo 182 Sport,29880,137,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
+HONDA,Civic,1.5 VTEC Turbo 182 Sport Plus(3),31880,139,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.5 VTEC Turbo 182 Sport Plus CVT,33180,151,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.5 VTEC Turbo 182 Prestige CVT,34180,151,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.0 VTEC Turbo 126 Dynamic,27620,139,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic,1.0 VTEC Turbo 126 Dynamic CVT,28920,149,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic,False
 HONDA,Civic-Type-R,2.0 i-VTEC Type-R GT,44920,193,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/Civic-Type-R,False
-HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Comfort,35780,156,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
-HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Elegance,39530,156,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
-HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Executive,42650,156,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
-HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Executive Toit panoramique,43950,158,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
+HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Comfort,36240,156,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
+HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Elegance,40140,156,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
+HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Executive,43110,156,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
+HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Executive Toit panoramique,44410,158,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
 HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Exclusive,46760,156,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
-HONDA,CR-V-Hybrid,2.0 i-MMD 184 4WD Exclusive,48150,168,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
-HONDA,CR-V-Hybrid,2.0 i-MMD 184 4WD Origin Edition,50400,169,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
+HONDA,CR-V-Hybrid,2.0 i-MMD 184 4WD Exclusive,48760,168,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
+HONDA,CR-V-Hybrid,2.0 i-MMD 184 4WD Origin Edition,51010,169,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
+HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Comfort(0),35780,156,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
+HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Elegance(1),39530,156,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
+HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Executive(2),42650,156,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
+HONDA,CR-V-Hybrid,2.0 i-MMD 184 2WD Executive Toit panoramique(3),43950,158,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
 HONDA,CR-V-Hybrid,2.0 i-MMD 184 4WD Elegance,41530,166,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
 HONDA,CR-V-Hybrid,2.0 i-MMD 184 4WD Executive,44650,166,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
+HONDA,CR-V-Hybrid,2.0 i-MMD 184 4WD Exclusive(4),48150,168,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
+HONDA,CR-V-Hybrid,2.0 i-MMD 184 4WD Origin Edition(5),50400,169,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/CR-V-Hybrid,False
 HONDA,e,Honda e 100 kW,35890,0,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/e,True
 HONDA,e,Honda e 113 kW Advance 16 pouces,38890,0,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/e,True
 HONDA,e,Honda e 113 kW Advance 17 pouces,38890,0,https://www.latribuneauto.com/caracteristiques-voitures-neuves/HONDA/modele/e,True
@@ -2921,17 +2968,24 @@ MITSUBISHI,L200-Club-Cabine,2.2 DI-D 150 AS&G 4WD Invite,33290,226,https://www.l
 MITSUBISHI,L200-Club-Cabine,2.2 DI-D 150 AS&G 4WD Intense,35990,231,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/L200-Club-Cabine,False
 MITSUBISHI,L200-Club-Cabine,2.2 DI-D 150 AS&G 4WD Intense Navi,36490,231,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/L200-Club-Cabine,False
 MITSUBISHI,L200-Club-Cabine,2.2 DI-D 150 AS&G 4WD Instyle Navi,28890,231,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/L200-Club-Cabine,False
-MITSUBISHI,Space-Star,1.0 MIVEC 71 AS&G In,12590,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
-MITSUBISHI,Space-Star,1.0 MIVEC 71 AS&G Invite,13390,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
-MITSUBISHI,Space-Star,1.2 MIVEC 80 AS&G Intense,16290,116,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
-MITSUBISHI,Space-Star,1.2 MIVEC 80 AS&G Red Line Edition,15090,116,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
-MITSUBISHI,Space-Star,1.2 MIVEC 80 CVT AS&G Intense,17290,125,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
-MITSUBISHI,Space-Star,1.2 MIVEC 80 CVT AS&G Red Line Edition,16090,125,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.0 MIVEC 71 AS&G In,12390,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.0 MIVEC 71 AS&G Invite,13190,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.2 MIVEC 80 AS&G Intense,16090,116,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.2 MIVEC 80 AS&G Red Line Edition,14990,116,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.2 MIVEC 80 CVT AS&G Intense,17090,125,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.2 MIVEC 80 CVT AS&G Red Line Edition,15890,125,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
 MITSUBISHI,Space-Star,1.0 MIVEC 71 AS&G Inform,13490,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.0 MIVEC 71 AS&G Invite(0),14190,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
 MITSUBISHI,Space-Star,1.0 MIVEC 71 AS&G Intense,16490,116,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
 MITSUBISHI,Space-Star,1.0 MIVEC 71 CVT AS&G Intense,17490,125,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
 MITSUBISHI,Space-Star,1.0 MIVEC 71 AS&G Red Line Edition,15290,116,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
 MITSUBISHI,Space-Star,1.0 MIVEC 71 CVT AS&G Red Line Edition,16290,125,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.0 MIVEC 71 AS&G In(1),12590,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.0 MIVEC 71 AS&G Invite(2),13390,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.2 MIVEC 80 AS&G Intense(3),16290,116,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.2 MIVEC 80 AS&G Red Line Edition(4),15090,116,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.2 MIVEC 80 CVT AS&G Intense(5),17290,125,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
+MITSUBISHI,Space-Star,1.2 MIVEC 80 CVT AS&G Red Line Edition(6),16090,125,https://www.latribuneauto.com/caracteristiques-voitures-neuves/MITSUBISHI/modele/Space-Star,False
 NISSAN,Ariya,63 kWh 160 kW Advance,46400,0,https://www.latribuneauto.com/caracteristiques-voitures-neuves/NISSAN/modele/Ariya,True
 NISSAN,Ariya,87 kWh 178 kW Evolve,57400,0,https://www.latribuneauto.com/caracteristiques-voitures-neuves/NISSAN/modele/Ariya,True
 NISSAN,Ariya,87 kWh 225 kW e-4orce Evolve,60400,0,https://www.latribuneauto.com/caracteristiques-voitures-neuves/NISSAN/modele/Ariya,True
@@ -4173,38 +4227,70 @@ TOYOTA,Aygo-X,1.0 72 Dynamic S-CVT,17990,108,https://www.latribuneauto.com/carac
 TOYOTA,Aygo-X,1.0 72 Design S-CVT,18990,108,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Aygo-X,False
 TOYOTA,Aygo-X,1.0 72 Collection S-CVT,20690,108,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Aygo-X,False
 TOYOTA,Aygo-X,1.0 72 X Air Limited S-CVT,22990,108,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Aygo-X,False
-TOYOTA,C-HR-Hybride,1.8 Dynamic,29800,109,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
-TOYOTA,C-HR-Hybride,1.8 Edition,31300,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
-TOYOTA,C-HR-Hybride,1.8 Distinctive,33300,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
-TOYOTA,C-HR-Hybride,1.8 Graphic,33300,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,1.8 Dynamic,30500,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,1.8 Edition,32000,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,1.8 Distinctive,34000,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,1.8 Graphic,34000,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
 TOYOTA,C-HR-Hybride,1.8 GR Sport,36000,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
 TOYOTA,C-HR-Hybride,1.8 Collection,37500,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
-TOYOTA,C-HR-Hybride,2.0 Edition,33300,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
-TOYOTA,C-HR-Hybride,2.0 Distinctive,35300,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
-TOYOTA,C-HR-Hybride,2.0 Graphic,35300,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,2.0 Edition,34000,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,2.0 Distinctive,36000,120,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,2.0 Graphic,36000,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
 TOYOTA,C-HR-Hybride,2.0 GR Sport,38000,120,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
-TOYOTA,C-HR-Hybride,2.0 Collection,38800,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,2.0 Collection,39500,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,1.8 Dynamic(0),30500,109,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,1.8 Edition(1),32000,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,1.8 Distinctive(2),34000,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,1.8 Graphic(3),34000,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,1.8 Dynamic(4),29800,109,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,1.8 Edition(5),31300,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,1.8 Distinctive(6),33300,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,1.8 Graphic(7),33300,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,2.0 Edition(8),33300,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,2.0 Distinctive(9),35300,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,2.0 Graphic(10),35300,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
+TOYOTA,C-HR-Hybride,2.0 Collection(11),38800,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
 TOYOTA,C-HR-Hybride,2.0 Première,38800,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/C-HR-Hybride,False
 TOYOTA,Camry-Hybride,218 2WD Dynamic,39100,120,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Camry-Hybride,False
 TOYOTA,Camry-Hybride,218 2WD Design,44700,125,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Camry-Hybride,False
 TOYOTA,Camry-Hybride,218 2WD Lounge,47800,126,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Camry-Hybride,False
-TOYOTA,Corolla-Hybride,1.8 122h e-CVT Active,27950,101,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
-TOYOTA,Corolla-Hybride,1.8 122h e-CVT Dynamic,28750,101,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
-TOYOTA,Corolla-Hybride,1.8 122h e-CVT Design,29750,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
-TOYOTA,Corolla-Hybride,1.8 122h e-CVT Collection,32250,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
-TOYOTA,Corolla-Hybride,1.8 122h e-CVT GR Sport,32250,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
-TOYOTA,Corolla-Hybride,2.0 184h e-CVT Design,31550,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
-TOYOTA,Corolla-Hybride,2.0 184h e-CVT Collection,34050,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
-TOYOTA,Corolla-Hybride,2.0 184h e-CVT GR Sport,34250,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
-TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT Active,28950,101,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
-TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT Dynamic,29750,103,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
-TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT Design,30750,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
-TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT Collection,33250,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
-TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT GR Sport,33250,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
-TOYOTA,Corolla-Touring-Sports-Hybride,2.0 184h e-CVT Design,32550,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
-TOYOTA,Corolla-Touring-Sports-Hybride,2.0 184h e-CVT Collection,35050,121,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
-TOYOTA,Corolla-Touring-Sports-Hybride,2.0 184h e-CVT GR Sport,35250,121,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Hybride,1.8 122h e-CVT Active,28250,101,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,1.8 122h e-CVT Dynamic,29050,101,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,1.8 122h e-CVT Design,30050,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,1.8 122h e-CVT Collection,32550,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,1.8 122h e-CVT GR Sport,31250,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,2.0 184h e-CVT Design,32050,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,2.0 184h e-CVT Collection,34550,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,2.0 184h e-CVT GR Sport,33250,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,1.8 122h e-CVT Active(0),27950,101,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,1.8 122h e-CVT Dynamic(1),28750,101,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,1.8 122h e-CVT Design(2),29750,110,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,1.8 122h e-CVT Collection(3),32250,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,1.8 122h e-CVT GR Sport(4),32250,111,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,2.0 184h e-CVT Design(5),31750,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,2.0 184h e-CVT Collection(6),34250,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,2.0 184h e-CVT GR Sport(7),34250,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,2.0 184h e-CVT Design(8),31550,118,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Hybride,2.0 184h e-CVT Collection(9),34050,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT Active,29250,101,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT Dynamic,30050,103,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT Design,31050,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT Collection,33550,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT GR Sport,32250,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,2.0 184h e-CVT Design,33050,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,2.0 184h e-CVT Collection,35550,120,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,2.0 184h e-CVT GR Sport,34250,121,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT Active(0),28950,101,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT Dynamic(1),29750,103,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT Design(2),30750,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT Collection(3),33250,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,1.8 122h e-CVT GR Sport(4),33250,112,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,2.0 184h e-CVT Design(5),32750,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,2.0 184h e-CVT Collection(6),35250,120,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,2.0 184h e-CVT GR Sport(7),35250,121,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
 TOYOTA,Corolla-Touring-Sports-Hybride,2.0 184h e-CVT Trek,35050,121,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,2.0 184h e-CVT Design(8),32550,119,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
+TOYOTA,Corolla-Touring-Sports-Hybride,2.0 184h e-CVT Collection(9),35050,121,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Corolla-Touring-Sports-Hybride,False
 TOYOTA,GR86,2.4 L D-4S Boite Manuelle,33900,200,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/GR86,False
 TOYOTA,GR86,2.4 L D-4S Boite Automatique,35700,199,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/GR86,False
 TOYOTA,Highlander-Hybride,2.5 AWD-i 248 Lounge,62500,158,https://www.latribuneauto.com/caracteristiques-voitures-neuves/TOYOTA/modele/Highlander-Hybride,False
