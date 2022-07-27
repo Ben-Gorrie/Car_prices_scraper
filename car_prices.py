@@ -80,7 +80,7 @@ def get_all_car_models(new_or_old : str, car_brands : list, car_ids : list) -> d
         elif new_or_old == "old":
             html = get_html("https://www.latribuneauto.com/cote-occasions/?search[brand]=" + str(car_ids[car_brands.index(car_brand)]))
         soup = make_soup(html)
-        models_html = soup.find_all(name = "select", id = "search_model")[0]
+        models_html = soup.find(name = "select", id = "search_model")
         models = []
         for model in models_html.find_all("option"):
 
@@ -152,7 +152,7 @@ def get_old_car_submodels_dates(car_models : dict) -> dict:
             html = get_html(f"https://www.latribuneauto.com/cote-occasions/{brand}/modele/{model}")
             soup = make_soup(html)
 
-            years_html = soup.find_all(name = "div", id = "years-module")[0]
+            years_html = soup.find(name = "div", id = "years-module")
             all_years = list(years_html.stripped_strings)[1:]
             valid_years_in_html = []
             for i in all_years:
@@ -173,6 +173,7 @@ def get_all_old_car_submodels_info(brand_and_model_to_dates : dict) -> dict:
     :return: dictionary which links car brand, model and date to submodel information
     """
     brand_and_model_and_year_to_submodels = {}
+
     for brand, model in brand_and_model_to_dates:
         for year in brand_and_model_to_dates[(brand, model)]:
             html = get_html(f"https://www.latribuneauto.com/caracteristiques-voitures-occasions/{brand}/modele/{model}/{year}")
@@ -200,7 +201,8 @@ def clean_submodels_info(submodels_info : dict) -> dict:
     :return: dictionary containing info about car submodels
     """
     brand_and_model_and_submodel_to_info = {}
-    for brand, model in submodels_info: 
+    for brand, model in submodels_info:
+        #all_submodels contains info about all submodels for a particular brand and model. We want to 
         all_submodels = submodels_info[(brand, model)]
         container = []
         specific_submodel = []
@@ -210,7 +212,8 @@ def clean_submodels_info(submodels_info : dict) -> dict:
             if datapoint == "2":
                 container.append(specific_submodel)
                 specific_submodel = []
-                
+        
+        #As some submodel names are shared, this prevents overwriting data
         duplicate_key_counter = 0
         for submodel_info in container:
             key = (brand, model, submodel_info[0])
@@ -248,7 +251,8 @@ def clean_submodels_info_old(submodels_info : dict) -> dict:
             if datapoint == "2":
                 container.append(specific_submodel)
                 specific_submodel = []
-                
+        
+        #As some submodel names are shared, this prevents overwriting data
         duplicate_key_counter = 0
         for submodel_info in container:
             key = (brand, model, year, submodel_info[0])
@@ -419,10 +423,6 @@ def main():
 
     df = turn_dict_to_df_and_edit(final)
     print("Turned into df")
-
-    #final = read_dict_as_str(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\submodels_info_clean.txt")
-
-    #df = turn_dict_to_df_and_edit(final)
 
     indices, hrefs = get_hrefs_for_electric_submodels(df)
 
