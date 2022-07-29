@@ -9,6 +9,7 @@ from datetime import datetime
 import ast
 import logging
 import pickle
+import re
 
 logging.basicConfig(filename='logs.log', filemode='w', level=logging.INFO)
 
@@ -132,7 +133,8 @@ def get_all_car_submodels_info(car_models : dict) -> dict:
 
         
        
-    save_dict_as_str(brand_and_model_to_submodel, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\submodels_info.txt")
+    #save_dict_as_str(brand_and_model_to_submodel, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\submodels_info.txt")
+    save_dict_as_str(brand_and_model_to_submodel, "/home/bengorrie/Car_prices_scraper/submodels_info.txt")
     return brand_and_model_to_submodel
 
 def get_old_car_submodels_dates(car_models : dict) -> dict:
@@ -163,7 +165,8 @@ def get_old_car_submodels_dates(car_models : dict) -> dict:
 
         
             
-    save_dict_as_str(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\model_to_dates_new.txt.py")
+    #save_dict_as_str(model_to_dates, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\model_to_dates_new.txt")
+    save_dict_as_str(model_to_dates, "/home/bengorrie/Car_prices_scraper/model_to_dates_new.txt")
     return model_to_dates
             
 def get_all_old_car_submodels_info(brand_and_model_to_dates : dict) -> dict:
@@ -188,7 +191,8 @@ def get_all_old_car_submodels_info(brand_and_model_to_dates : dict) -> dict:
             else:
                 brand_and_model_and_year_to_submodels[(brand, model, year)] = []
 
-    save_dict_as_str(brand_and_model_and_year_to_submodels, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\old_submodels_info.txt")
+    #save_dict_as_str(brand_and_model_and_year_to_submodels, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\old_submodels_info.txt")
+    save_dict_as_str(brand_and_model_and_year_to_submodels, "/home/bengorrie/Car_prices_scraper/old_submodels_info.txt")
     return brand_and_model_and_year_to_submodels
 
 
@@ -214,12 +218,14 @@ def clean_submodels_info(submodels_info : dict) -> dict:
                 specific_submodel = []
         
         #As some submodel names are shared, this prevents overwriting data
-        duplicate_key_counter = 0
+        duplicate_key_counter = 1
         for submodel_info in container:
             key = (brand, model, submodel_info[0])
             if key in brand_and_model_and_submodel_to_info:
-                key = (brand, model, submodel_info[0] + "(" + str(duplicate_key_counter) + ")")
-                duplicate_key_counter += 1
+                while key in brand_and_model_and_submodel_to_info:
+                    key = (brand, model, submodel_info[0] + "(" + str(duplicate_key_counter) + ")")
+                    duplicate_key_counter += 1
+                duplicate_key_counter = 1
             
             if len(submodel_info[1:]) == 1:
                 if "€" in submodel_info:
@@ -229,7 +235,8 @@ def clean_submodels_info(submodels_info : dict) -> dict:
             else:
                 brand_and_model_and_submodel_to_info[key] = {"price" : submodel_info[1], "CO2_emissions" : submodel_info[2], "url" : f"https://www.latribuneauto.com/caracteristiques-voitures-neuves/{brand}/modele/{model}"}
 
-    save_dict_as_str(brand_and_model_and_submodel_to_info, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\submodels_info_clean.txt")
+    #save_dict_as_str(brand_and_model_and_submodel_to_info, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\submodels_info_clean.txt")
+    save_dict_as_str(brand_and_model_and_submodel_to_info, "/home/bengorrie/Car_prices_scraper/submodels_info_clean.txt")
     return brand_and_model_and_submodel_to_info 
 
 
@@ -253,23 +260,26 @@ def clean_submodels_info_old(submodels_info : dict) -> dict:
                 specific_submodel = []
         
         #As some submodel names are shared, this prevents overwriting data
-        duplicate_key_counter = 0
+        duplicate_key_counter = 1
         for submodel_info in container:
             key = (brand, model, year, submodel_info[0])
             if key in brand_and_model_and_year_and_submodel_to_info:
-                key = (brand, model, year, submodel_info[0] + "(" + str(duplicate_key_counter) + ")")
-                duplicate_key_counter += 1
+                while key in brand_and_model_and_year_and_submodel_to_info:
+                    key = (brand, model, year, submodel_info[0] + "(" + str(duplicate_key_counter) + ")")
+                    duplicate_key_counter += 1
+                duplicate_key_counter = 1
             
             if len(submodel_info[1:]) == 1:
                 if "€" in submodel_info:
-                    brand_and_model_and_year_and_submodel_to_info[(brand, model, year, submodel_info[0])] = {"price" : submodel_info[1], "CO2_emissions" : None, "url" : f"https://www.latribuneauto.com/caracteristiques-voitures-occasions/{brand}/modele/{model}/{year}"}
+                    brand_and_model_and_year_and_submodel_to_info[key] = {"price" : submodel_info[1], "CO2_emissions" : None, "url" : f"https://www.latribuneauto.com/caracteristiques-voitures-occasions/{brand}/modele/{model}/{year}"}
                 else:
-                    brand_and_model_and_year_and_submodel_to_info[(brand, model, year, submodel_info[0])] = {"price" : None, "CO2_emissions" : submodel_info[1], "url" : f"https://www.latribuneauto.com/caracteristiques-voitures-occasions/{brand}/modele/{model}/{year}"}
+                    brand_and_model_and_year_and_submodel_to_info[key] = {"price" : None, "CO2_emissions" : submodel_info[1], "url" : f"https://www.latribuneauto.com/caracteristiques-voitures-occasions/{brand}/modele/{model}/{year}"}
 
             else:
-                brand_and_model_and_year_and_submodel_to_info[(brand, model, year, submodel_info[0])] = {"price" : submodel_info[1], "CO2_emissions" : submodel_info[2], "url" : f"https://www.latribuneauto.com/caracteristiques-voitures-occasions/{brand}/modele/{model}/{year}"}
+                brand_and_model_and_year_and_submodel_to_info[key] = {"price" : submodel_info[1], "CO2_emissions" : submodel_info[2], "url" : f"https://www.latribuneauto.com/caracteristiques-voitures-occasions/{brand}/modele/{model}/{year}"}
 
-    save_dict_as_str(brand_and_model_and_year_and_submodel_to_info, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\old_submodels_info_clean.txt")
+    #save_dict_as_str(brand_and_model_and_year_and_submodel_to_info, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\old_submodels_info_clean.txt")
+    save_dict_as_str(brand_and_model_and_year_and_submodel_to_info, "/home/bengorrie/Car_prices_scraper/old_submodels_info_clean.txt")
     return brand_and_model_and_year_and_submodel_to_info
 
 def turn_dict_to_df_and_edit(dictionary : dict) -> pd.DataFrame:
@@ -292,7 +302,7 @@ def turn_dict_to_df_and_edit(dictionary : dict) -> pd.DataFrame:
 
     return df
 
-def get_hrefs_for_electric_submodels(df : pd.DataFrame) -> tuple:
+def get_hrefs_for_electric_submodels(new_or_old : str, df : pd.DataFrame) -> tuple:
     
     indices = df[df["is_electric"]].index.tolist()
 
@@ -303,18 +313,33 @@ def get_hrefs_for_electric_submodels(df : pd.DataFrame) -> tuple:
 
         submodel = index[-1]
 
+        #remove the duplicate key number at the end
+        if re.search("\(\d+\)", submodel):
+            print("Number removed")
+            submodel = submodel[:-3]
+
         html = get_html(url)
 
         soup = make_soup(html)
 
-        href = soup.find("strong", text = submodel).parent.get("href")
+        try:
+
+            href = soup.find("strong", text = submodel).parent.get("href")
+        except:
+            print(index)
+            print(submodel)
+            print(url)
+            raise NameError('bruh')
 
         print(href)
 
         hrefs.append(href)
+    if new_or_old == "new":
     
-    save_list(hrefs, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\hrefs.P")
-
+        #save_list(hrefs, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\hrefs.P")
+        save_list(hrefs, "/home/bengorrie/Car_prices_scraper/hrefs.P")
+    elif new_or_old == "old":
+        save_list(hrefs, "/home/bengorrie/Car_prices_scraper/old_hrefs.P")
     return (indices, hrefs)
 
 
@@ -360,7 +385,8 @@ def get_all_autonomous_range(hrefs : list) -> list:
         
         autonomous_ranges.append(distance)
 
-    save_list(autonomous_ranges, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\autonomous_ranges.P")
+    #save_list(autonomous_ranges, r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\autonomous_ranges.P")
+    save_list(autonomous_ranges, "/home/bengorrie/Car_prices_scraper/autonomous_ranges.P")
     return autonomous_ranges
 
 
@@ -424,9 +450,10 @@ def main():
     df = turn_dict_to_df_and_edit(final)
     print("Turned into df")
 
-    indices, hrefs = get_hrefs_for_electric_submodels(df)
+    indices, hrefs = get_hrefs_for_electric_submodels("new", df)
 
     autonomous_ranges = get_all_autonomous_range(hrefs)
+
 
     df["autonomous_range"] = None
 
@@ -434,11 +461,13 @@ def main():
         df.loc[indices[i], "autonomous_range"] = autonomous_ranges[i]
 
 
-    df.to_csv(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\df_with_range_full_process.csv")
+    df.to_csv("/home/bengorrie/Car_prices_scraper/df_with_range_full_process.csv")
+
+
 
 def main_old():
 
-    html = get_html("https://www.latribuneauto.com/cote-occasions/")
+    r"""html = get_html("https://www.latribuneauto.com/cote-occasions/")
     print("Got html")
 
     soup = make_soup(html)
@@ -459,23 +488,37 @@ def main_old():
     submodels_info = get_all_old_car_submodels_info(models_dates)
     print("Got car submodels")
 
+
     final = clean_submodels_info_old(submodels_info)
     print("Cleaned dict")
 
     df = turn_dict_to_df_and_edit(final)
     print("Turned into df")
+
+    df.to_csv("/home/bengorrie/Car_prices_scraper/final_old.csv")"""
+
     
-    
+    df = pd.read_csv("/home/bengorrie/Car_prices_scraper/final_old.csv")
+
+    df.set_index(["Unnamed: 0", "Unnamed: 1", "Unnamed: 2", "Unnamed: 3"], inplace = True)
+
+    indices, hrefs = get_hrefs_for_electric_submodels("old", df)
+
+    autonomous_ranges = get_all_autonomous_range(hrefs)
 
 
-    df.to_csv(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\final_old.csv")
+    df["autonomous_range"] = None
+
+    for i in range(len(indices)):
+        df.loc[indices[i], "autonomous_range"] = autonomous_ranges[i]
+
+
+    df.to_csv("/home/bengorrie/Car_prices_scraper/df_with_range_full_process_old.csv")
 
 
 
-    r"""car_models = read_dict(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\car_models_old.json")
 
-    brand_and_model_to_dates = read_dict_as_str(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\model_to_dates_new.json")
 
-    submodels_info = read_dict_as_str(r"C:\Users\BenjaminGORRIE\OneDrive - Ekimetrics\Documents\Car_prices_scraper\old_submodels_info.txt")"""
 
-main()
+
+main_old()
